@@ -167,7 +167,7 @@ function buildSearchData(files, addToSearchData, loadedVersions) {
       if (nextIndex >= files.length) {
         break
       }
-      const worker = new Worker(path.join(__dirname, 'html-to-doc.js'), {
+      const worker = new Worker(path.join(__dirname, 'html-to-doc.mjs'), {
         workerData: {
           loadedVersions: loadedVersions
         },
